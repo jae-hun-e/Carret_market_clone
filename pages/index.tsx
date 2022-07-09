@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <div className="bg-slate-400 py-10 px-5 grid gap-5 space-y-5  min-h-screen ">
+      {/*1번 layout*/}
       <div className="bg-white p-5 rounded-3xl shadow-2xl">
         <span className="font-semibold text-2xl ">TailWindCSS</span>
         <div className="flex justify-between">
@@ -17,10 +18,16 @@ const Home: NextPage = () => {
           <span>Item5</span>
           <span className="font-semibold">$6</span>
         </div>
-        <div className="mt-3 bg-blue-600 p-2 text-white text-center rounded-2xl w-1/2 mx-auto">
+        <button
+          className="mt-3 bg-blue-600 p-2 text-white text-center rounded-2xl w-1/2 mx-auto
+        hover:bg-red-400 hover:text-black
+        active:bg-yellow-200
+        focus:text-red-500"
+        >
           Check out
-        </div>
+        </button>
       </div>
+      {/*2번 layout*/}
       <div className="bg-white overflow-hidden rounded-3xl shadow-2xl">
         <div className="bg-blue-500 p-4 pb-10">
           <span className="text-white text-2xl">Profile</span>
@@ -31,7 +38,7 @@ const Home: NextPage = () => {
               <span className="text-gray-400 pt-3 text-sm">Orders</span>
               <span className="font-medium  text-sm ">340</span>
             </div>
-            <div className="w-20 h-20 bg-blue-300 rounded-full"></div>
+            <div className="w-20 h-20 bg-blue-300 rounded-full" />
             <div className=" flex flex-col items-center">
               <span className="text-gray-400 pt-3 text-sm">Spent</span>
               <span className="font-medium text-sm  ">$2,310</span>
@@ -43,6 +50,7 @@ const Home: NextPage = () => {
           <span className="text-sm text-gray-400">한국</span>
         </div>
       </div>
+      {/*3번 layout*/}
       <div className="bg-white p-4 rounded-3xl shadow-2xl">
         <div className="flex justify-between items-center">
           <span>⬅️</span>
@@ -59,9 +67,19 @@ const Home: NextPage = () => {
         <div className="font-medium text-xl">
           <div className="flex flex-row justify-between">
             <div className="mt-1 mb-2 space-x-3">
-              <input type="radio" />
-              <input type="radio" />
-              <input type="radio" />
+              <button
+                className="w-5 h-5 rounded-full bg-yellow-500
+              focus:ring-2 ring-offset-2 ring-yellow-200
+              transition"
+              />
+              <button
+                className="w-5 h-5 rounded-full bg-blue-400
+              focus:ring-2 ring-offset-2 ring-blue-200"
+              />
+              <button
+                className="w-5 h-5 rounded-full bg-red-400
+              focus:ring-2 ring-offset-2 ring-red-200"
+              />
             </div>
             <div className="flex justify-end items-center space-x-4">
               <button className=" bg-gray-300 rounded-xl aspect-square w-8 text-xl text-gray-500">
