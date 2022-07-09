@@ -6,12 +6,16 @@ const Home: NextPage = () => {
       {/*1번 layout*/}
       <div className="bg-white p-5 rounded-3xl shadow-2xl">
         <span className="font-semibold text-2xl ">TailWindCSS</span>
+        <ul>
+          {[1,2,3,4,5].map((item) => (
+              <div key={item} className="flex justify-between first:bg-amber-200 last:bg-blue-200">
+                <span className="text-gray-500">Item1</span>
+                <span className="font-semibold">$2</span>
+              </div>
+          ))}
+        </ul>
         <div className="flex justify-between">
-          <span className="text-gray-500">Item1</span>
-          <span className="font-semibold">$2</span>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-gray-500">Item3</span>
+          <span className="text-gray-500">Item2</span>
           <span className="font-semibold">$4</span>
         </div>
         <div className=" flex justify-between  my-2 pt-2 border-t-2 border-dashed">
