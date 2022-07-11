@@ -2,9 +2,17 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-400 py-10 px-5 grid gap-5 space-y-5  min-h-screen ">
+    <div
+      className="bg-slate-400 py-10 px-5 grid gap-5 space-y-5  min-h-screen
+                 lg:flex lg:justify-between lg:space-x-10 lg:m-auto lg:w-screen"
+    >
       {/*1번 layout*/}
-      <div className="bg-white p-5 rounded-3xl shadow-2xl">
+      <div
+        className="bg-white p-5 rounded-3xl shadow-2xl
+        sm:bg-red-500
+        lg:bg-teal-300
+      "
+      >
         <span className="font-semibold text-2xl ">TailWindCSS</span>
         <ul>
           {[1, 2, 3, 4, 5].map((item) => (
