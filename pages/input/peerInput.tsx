@@ -7,7 +7,7 @@ const manyInput: NextPage = () => {
         type="text"
         required
         placeholder="UserName"
-        className="border-2 border-gray-400 p-1 rounded-2xl
+        className="border-2 border-gray-400 p-[10px] rounded-2xl
         peer"
       />
       <span
