@@ -12,19 +12,16 @@ const manyTag: NextPage = () => {
           치즈
         </span>
       </details>
-
       <ul className="flex flex-col space-y-2 p-3 list-disc marker:text-teal-500">
         <li>hello</li>
         <li>hello</li>
         <li>hello</li>
       </ul>
-
       <input
         type="file"
         className="file:border-0 file:rounded-xl file:bg-purple-300 file:text-white
         file:px-2 file:cursor-pointer file:transition-colors  file:hover:bg-blue-800 file:hover:text-yellow-300"
       />
-
       <p className="first-letter:text-8xl first-letter:hover:text-purple-400">
         Hello
       </p>

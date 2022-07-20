@@ -3,8 +3,10 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <div
-      className="bg-slate-400 py-10 px-5 grid gap-5 space-y-5  min-h-screen
-                 lg:flex lg:justify-between lg:space-x-10 lg:m-auto lg:w-screen"
+      className="bg-slate-400 py-10 px-5 grid gap-5 space-y-5 min-h-screen
+                    sm:grid-cols-2 sm:place-content-center
+                    lg:grid-cols-3 lg:space-x-10 lg:m-auto lg:w-screen
+                    dark:bg-teal-200"
     >
       {/*1번 layout*/}
       <div
@@ -80,7 +82,10 @@ const Home: NextPage = () => {
         </div>
       </div>
       {/*3번 layout*/}
-      <div className="bg-white p-4 rounded-3xl shadow-2xl">
+      <div
+        className="bg-white p-4 rounded-3xl shadow-2xl
+                      sm:col-span-2"
+      >
         <div className="flex justify-between items-center">
           <span>⬅️</span>
           <div className="space-x-3">
@@ -128,7 +133,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white p-4 rounded-3xl shadow-2xl" />
     </div>
   );
 };
