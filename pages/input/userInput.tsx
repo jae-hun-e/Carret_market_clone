@@ -4,10 +4,8 @@ import NavBar from "../../components/NavBar";
 const Input: NextPage = () => {
   return (
     <>
-      <NavBar />
-
       <form
-        className="flex flex-col text-center bg-gray-400 space-y-3 p-4
+        className="flex flex-col text-center bg-[#a8a8a8] space-y-3 p-4
     focus-within:bg-blue-200"
       >
         <input

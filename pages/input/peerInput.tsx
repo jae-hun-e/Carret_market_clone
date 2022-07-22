@@ -4,7 +4,6 @@ import NavBar from "../../components/NavBar";
 const manyInput: NextPage = () => {
   return (
     <>
-      <NavBar />
       <div className="flex flex-col space-y-2 p-4">
         <input
           type="text"

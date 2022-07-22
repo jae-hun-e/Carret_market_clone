@@ -4,8 +4,6 @@ import NavBar from "../../components/NavBar";
 const manyTag: NextPage = () => {
   return (
     <>
-      <NavBar />
-
       <div className="p-5">
         <details className="open:text-white open:bg-blue-500">
           <summary className="select-none cursor-pointer">

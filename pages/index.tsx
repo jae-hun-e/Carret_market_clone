@@ -9,7 +9,6 @@ const Home: NextPage = () => {
                     lg:grid-cols-3 lg:space-x-10 lg:m-auto lg:w-screen
                     dark:bg-teal-200"
     >
-      <NavBar />
       {/*1번 layout*/}
       <div
         className="bg-white p-5 rounded-3xl shadow-2xl
