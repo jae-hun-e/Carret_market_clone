@@ -1,9 +1,11 @@
 import type { NextPage } from "Next";
 import NavBar from "../../components/NavBar";
+import SEO from "../../components/SEO";
 
 const manyInput: NextPage = () => {
   return (
     <>
+      <SEO title="peerInput" />
       <div className="flex flex-col space-y-2 p-4">
         <input
           type="text"

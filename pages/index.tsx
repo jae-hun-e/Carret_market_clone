@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import NavBar from "../components/NavBar";
+import SEO from "../components/SEO";
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +9,7 @@ const Home: NextPage = () => {
                     lg:grid-cols-3 lg:space-x-10 lg:m-auto lg:w-screen
                     dark:bg-teal-200"
     >
+      <SEO title="Home" />
       {/*1번 layout*/}
       <div
         className="bg-white p-5 rounded-3xl shadow-2xl

@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
 import NavBar from "../../components/NavBar";
+import SEO from "../../components/SEO";
 
 const Input: NextPage = () => {
   return (
     <>
+      <SEO title="userInput" />
       <form
         className="flex flex-col text-center bg-[#a8a8a8] space-y-3 p-4
     focus-within:bg-blue-200"

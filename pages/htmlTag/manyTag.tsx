@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
 import NavBar from "../../components/NavBar";
+import SEO from "../../components/SEO";
 
 const manyTag: NextPage = () => {
   return (
     <>
+      <SEO title="manyTag" />
       <div className="p-5">
         <details className="open:text-white open:bg-blue-500">
           <summary className="select-none cursor-pointer">
