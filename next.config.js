@@ -2,7 +2,6 @@
 
 const API_KEY = process.env["API_KEY"];
 const BASE_URL = "https://api.themoviedb.org/3";
-const POPULAR = "/movie/popular";
 
 const nextConfig = {
   reactStrictMode: true,
@@ -21,7 +20,11 @@ const nextConfig = {
     return [
       {
         source: "/api/movies",
-        destination: `${BASE_URL}${POPULAR}?api_key=${API_KEY}&language=ko`,
+        destination: `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=ko`,
+      },
+      {
+        source: "/api/movies/:id",
+        destination: `${BASE_URL}/movie/:id?api_key=${API_KEY}&language=ko`,
       },
     ];
   },
