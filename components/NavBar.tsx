@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { NextPage } from "next";
 
-export default function NavBar(): any {
+export default function NavBar(): JSX.Element {
   const router = useRouter();
   // console.log(router);
   return (
