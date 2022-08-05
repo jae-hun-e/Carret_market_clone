@@ -48,13 +48,19 @@ const Home: NextPage = ({ results }: any) => {
     <div className="grid grid-cols-3 gap-2">
       {!results && <h4>Loading...</h4>}
       {results?.map((data: IPopularMovies) => (
+        //  TODO 마스킹 방법
+        // <Link
+        //   key={data.id}
+        //   href={{
+        //     pathname: `movies/${data.id}`,
+        //     query: { title: data.original_title },
+        //   }}
+        //   as={`movies/${data.id}`}
+        // >
+        //  TODO catch All 방법
         <Link
           key={data.id}
-          href={{
-            pathname: `movies/${data.id}`,
-            query: { title: data.original_title },
-          }}
-          as={`movies/${data.id}`}
+          href={`movies/catch/${data.original_title}/${data.id}`}
         >
           <div className="m-5 text-center">
             {/*Image로 변경*/}
