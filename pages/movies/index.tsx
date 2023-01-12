@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AppProps } from "next/app";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import SEO from "../../components/SEO";
 
 const BASE_IMAGE = "https://image.tmdb.org/t/p/w500";
 
@@ -46,6 +47,7 @@ const Home: NextPage = ({ results }: any) => {
 
   return (
     <div className="grid grid-cols-3 gap-2">
+      <SEO title="movies" />
       {!results && <h4>Loading...</h4>}
       {results?.map((data: IPopularMovies) => (
         //  TODO 마스킹 방법

@@ -19,7 +19,7 @@ const CatchAll: NextPage = () => {
   }, [param]);
 
   return (
-    <div className="flex flex-col justify-center items-center mt-10 text-2xl">
+    <div>
       <SEO
         title={typeof paramData !== "undefined" ? paramData?.[0] : "undefined"}
       ></SEO>
